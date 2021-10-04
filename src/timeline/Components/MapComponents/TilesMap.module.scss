@@ -1,0 +1,44 @@
+@import './../../colors';
+
+.tilesMap {
+
+}
+
+.markerIcon {
+  position: absolute;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: -8px;
+  margin-top: -29px;
+
+}
+
+.markerIcon::after {
+  position: absolute;
+  content: '';
+  bottom: -30px;
+  left: -6px;
+  border: 10px solid transparent;
+}
+
+.defaultIconColor {border: 8px solid $dark;}
+.defaultIconColor::after {border-top: 17px solid $dark;}
+
+.cityIconColor {border: 8px solid $main-red;}
+.cityIconColor::after {border-top: 17px solid $main-red;}
+
+.countryIconColor {border: 8px solid $cyan;}
+.countryIconColor::after {border-top: 17px solid $cyan;}
+
+.continentIconColor {border: 8px solid $green;}
+.continentIconColor::after {border-top: 17px solid $green;}
+
+.regionIconColor {border: 8px solid $orange;}
+.regionIconColor::after {border-top: 17px solid $orange;}
+
+.stateIconColor {border: 8px solid $main-purple-dark;}
+.stateIconColor::after {border-top: 17px solid $main-purple-dark;}
+
+.addressIconColor {border: 8px solid $turquoise;}
+.addressIconColor::after {border-top: 17px solid $turquoise;}

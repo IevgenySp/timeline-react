@@ -1,0 +1,27 @@
+@import './../../colors';
+
+.settingsButton {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $main-red;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    left: 15px;
+    bottom: 15px;
+    z-index: 450;
+    position: fixed;
+    -webkit-box-shadow: -1px 1px 8px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -1px 1px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: -1px 1px 8px 1px rgba(34, 60, 80, 0.2);
+}
+
+.settingsButton:hover {
+    opacity: 1;
+}

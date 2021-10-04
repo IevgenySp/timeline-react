@@ -1,0 +1,68 @@
+@import './../colors';
+
+.activitiesList {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 3px;
+    margin-top: 12px;
+}
+
+.activityContainer, .addActivityContainer {
+    width: calc(100% - 7px);
+    min-height: 30px;
+    margin-bottom: 2px;
+    background: $light-grey2;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.addActivityContainer {
+
+}
+
+.activity {
+    font-family: 'Noto Sans';
+    font-size: 0.9rem;
+    font-weight: 400;
+    //line-height: 1.5;
+    color: $dark;
+
+    transform: translate(-103%, 0);
+    transition: transform 1s ease-in-out;
+    background: $orange;
+    height: 100%;
+    line-height: 200%;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -5px;
+}
+
+.activityEnterDone {
+    transform: translate(0%, 0);
+}
+
+.addPlace {
+    margin-left: -5px;
+}
+
+.addPlace, .addAction, .addNote {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+}
+
+.addPlace:hover, .addAction:hover, .addNote:hover {
+    background-color: $main-red;
+}

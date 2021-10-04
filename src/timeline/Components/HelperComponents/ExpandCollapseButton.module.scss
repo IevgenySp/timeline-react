@@ -1,0 +1,26 @@
+@import './../../colors';
+
+.expandCollapseButton {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $light-grey;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 8px;
+}
+
+.prevNextButton:hover {
+    opacity: 1;
+}

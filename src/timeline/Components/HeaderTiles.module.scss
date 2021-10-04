@@ -1,0 +1,22 @@
+.headerTiles {
+    display: flex;
+    margin: 5px 5px 0px 5px;
+    height: 50vh;
+    overflow: auto;
+    -webkit-box-shadow: 0px 12px 10px -8px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 12px 10px -8px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 12px 10px -8px rgba(34, 60, 80, 0.5);
+    position: relative;
+    z-index: 450; // A bit bigger than leaflet pane layer
+    -webkit-transition: height 1s ease-in-out;
+    -moz-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
+}
+
+.headerTilesExpanded {
+    height: 100vh;
+}
+
+.headerTilesCollapsed {
+    height: 50vh;
+}
