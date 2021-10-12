@@ -21,9 +21,20 @@ export type Day = {
 }
 export type Days = Map<number | string, Day>;
 
-export type PlaceTypes = 'continent' | 'region' | 'country' | 'village' | 'home' | 'house' |
-    'forest' | 'mountains' | 'entertainment' | 'rest' | 'sport' | 'transport' | 'postoffice' |
-    'clinic' | 'waterfall' | 'theatre' | 'bank' | 'pool' | 'monument' | 'park'
+//export type PlaceTypes = 'continent' | 'region' | 'country' | 'village' | 'home' | 'house' |
+//    'forest' | 'mountains' | 'entertainment' | 'rest' | 'sport' | 'transport' | 'postoffice' |
+//    'clinic' | 'waterfall' | 'theatre' | 'bank' | 'pool' | 'monument' | 'park';
+
+export enum PlaceTypes {
+    Continent = 'continent',
+    Region = 'region',
+    Country = 'country',
+    City = 'city',
+    State = 'state',
+    InternationalOrganization = 'international_organization',
+    Village = 'village',
+}
+
 export type Place = {
     id: number | string;
     placeId?: number | string;

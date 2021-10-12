@@ -16,6 +16,8 @@ export type activitiesColorsType = {
 
 const config = {
   tileMinWidth: 200,
+  mapMovementDuration: 1,
+  mapInitialLatLong: [31.505, -0.09],
   activitiesColors: {
     /*preparation: '#7ab800',
     airport: '#f8dfc2',
